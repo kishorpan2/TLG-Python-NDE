@@ -30,7 +30,7 @@ elif month ==12:
 else:
      print("Invalid input")
 try:
-    if int(month) > 12:
+    if(month > 12 or month <=0) :
         raise ValueError ('Invalid month')
 except ValueError as msg:
     print('The program found an ',msg, "error")
