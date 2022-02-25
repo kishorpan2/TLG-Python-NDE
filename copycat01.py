@@ -5,7 +5,9 @@ import shutil
 import os
 
 # move into the working directory
-os.chdir("/home/student/mycode/")
+# this line below is the problem
+# you aren't using mycode, you're using TLG-somethin'somethin'
+os.chdir("/home/student/TLG-Python-NDE/")
 
 # copy the fileA to fileB
 shutil.copy("5g_research/sdn_network.txt", "5g_research/sdn_network.txt.copy")
