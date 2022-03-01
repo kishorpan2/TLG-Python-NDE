@@ -23,4 +23,9 @@ for x in configlist:
 
 ## Always close your file
 configfile.close()
+## Iterate through configlist
+for x in configlist:
+    print(x, end="")   # by default, print() ends in a newline
+                       # by passsing end="" print will not "add a second"
+                       # newline character
 
